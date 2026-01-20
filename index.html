@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rabbithole Sports Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player">
+  <video controls autoplay width="100%">
+    <source src="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" type="application/x-mpegURL">
+  </video>
+
+  <button id="statsBtn">📊 Stats</button>
+</div>
+
+<div id="statsSheet" class="bottom-sheet">
+  <h3>NZ U19 vs BAN U19</h3>
+  <p><strong>NZ 51/1 (10 ov)</strong></p>
+
+  <h4>Batting</h4>
+  <p>Aryan Mann* – 20 (36)</p>
+  <p>Tom Jones* – 16 (18)</p>
+
+  <h4>Bowling</h4>
+  <p>Iqbal Hossain – 3-0-12-1</p>
+
+  <button onclick="closeSheet()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
